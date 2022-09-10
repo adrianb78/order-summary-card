@@ -81,7 +81,7 @@ h1 {
 
 div.plan {
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
@@ -91,11 +91,13 @@ div.plan {
 }
 .plan img {
     border: none;
+    margin-right: 1rem;
 }
 
 .plan .first{
     
-    margin-right: 1.5rem;
+    margin-right: 3rem;
+
 }
 
 .plan .first p {
@@ -172,7 +174,15 @@ button {    cursor: pointer;}
         background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
         height: 47vh;
     }
-    .container {
-        width: 600px;
+    .container, container section img:nth-child(1) {
+        max-width: 450px;
+    }
+    .plan .first{
+    
+        margin-right: 6rem;
+    
+    }
+    .plan img {
+        margin-right: 1rem;
     }
 }
